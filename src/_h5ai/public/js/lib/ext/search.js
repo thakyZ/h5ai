@@ -16,7 +16,7 @@ const settings = Object.assign({
 }, allsettings.search);
 const tpl =
         `<div id="search" class="tool">
-            <img src="${resource.image('search')}" alt="search"/>
+            <img src="${resource.image('search')}" onLoad="SVGInject(this)" alt="search"/>
             <input class="l10n_ph-search" type="text" value=""/>
         </div>`;
 let inputIsVisible = false;

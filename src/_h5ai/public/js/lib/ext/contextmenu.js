@@ -55,7 +55,7 @@ const createPanel = menu => {
             $li[0]._cmId = entry.id;
             $li.find('.cm-text').text(entry.text);
             if (entry.icon) {
-                $li.find('.cm-icon img').attr('src', resource.icon(entry.icon));
+                $li.find('.cm-icon img').attr('src', resource.icon(entry.icon)).attr('onLoad', 'SVGInject(this)');
             } else {
                 $li.find('.cm-icon').addCls('no-icon');
             }

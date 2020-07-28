@@ -16,12 +16,12 @@ const overlayTpl =
             <div id="pv-next-area" class="hof"><img src="${resource.image('preview-next')}"/></div>
             <div id="pv-bottombar" class="clearfix hof">
                 <ul id="pv-buttons">
-                    <li id="pv-bar-close" class="bar-right bar-button"><img src="${resource.image('preview-close')}"/></li>
-                    <li id="pv-bar-raw" class="bar-right"><a class="bar-button" target="_blank"><img src="${resource.image('preview-raw')}"/></a></li>
-                    <li id="pv-bar-fullscreen" class="bar-right bar-button"><img src="${resource.image('preview-fullscreen')}"/></li>
-                    <li id="pv-bar-next" class="bar-right bar-button"><img src="${resource.image('preview-next')}"/></li>
+                    <li id="pv-bar-close" class="bar-right bar-button"><img src="${resource.image('preview-close')}" onLoad="SVGInject(this)"/></li>
+                    <li id="pv-bar-raw" class="bar-right"><a class="bar-button" target="_blank"><img src="${resource.image('preview-raw')}" onLoad="SVGInject(this)"/></a></li>
+                    <li id="pv-bar-fullscreen" class="bar-right bar-button"><img src="${resource.image('preview-fullscreen')}" onLoad="SVGInject(this)"/></li>
+                    <li id="pv-bar-next" class="bar-right bar-button"><img src="${resource.image('preview-next')}" onLoad="SVGInject(this)"/></li>
                     <li id="pv-bar-idx" class="bar-right bar-label"></li>
-                    <li id="pv-bar-prev" class="bar-right bar-button"><img src="${resource.image('preview-prev')}"/></li>
+                    <li id="pv-bar-prev" class="bar-right bar-button"><img src="${resource.image('preview-prev')}" onLoad="SVGInject(this)"/></li>
                 </ul>
             </div>
         </div>`;
@@ -74,10 +74,10 @@ const updateGui = () => {
 
     if (isFullscreen) {
         dom('#pv-overlay').addCls('fullscreen');
-        dom('#pv-bar-fullscreen').find('img').attr('src', resource.image('preview-no-fullscreen'));
+        dom('#pv-bar-fullscreen').find('img').attr('src', resource.image('preview-no-fullscreen')).attr('onLoad', 'SVGInject(this)');
     } else {
         dom('#pv-overlay').rmCls('fullscreen');
-        dom('#pv-bar-fullscreen').find('img').attr('src', resource.image('preview-fullscreen'));
+        dom('#pv-bar-fullscreen').find('img').attr('src', resource.image('preview-fullscreen')).attr('onLoad', 'SVGInject(this)');
     }
 
     centerContent();

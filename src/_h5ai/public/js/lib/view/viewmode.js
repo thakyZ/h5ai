@@ -14,7 +14,7 @@ const settingsTpl =
         '<div id="viewmode-settings" class="block"><h1 class="l10n-view">View</h1></div>';
 const modeTpl =
         `<div id="viewmode-[MODE]" class="button mode">
-            <img src="${resource.image('view-[MODE]')}" alt="viewmode-[MODE]"/>
+            <img src="${resource.image('view-[MODE]')}" onLoad="SVGInject(this)" alt="viewmode-[MODE]"/>
         </div>`;
 const sizeTpl =
         '<input id="viewmode-size" type="range" min="0" max="0" value="0">';
@@ -34,7 +34,7 @@ const onChanged = (mode, size) => {
     if (settings.modeToggle === 'next') {
         mode = modes[(modes.indexOf(mode) + 1) % modes.length];
     }
-    dom('#viewmode-toggle img').attr('src', resource.image('view-' + mode));
+    dom('#viewmode-toggle img').attr('src', resource.image('view-' + mode)).attr('onLoad', 'SVGInject(this)');
 };
 
 const addSettings = () => {

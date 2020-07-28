@@ -31,7 +31,7 @@ const settingsTpl =
         `<div class="block">
             <h1 class="l10n-info">Info</h1>
             <div id="view-info" class="button view">
-                <img src="${resource.image('info-toggle')}" alt="view-info"/>
+                <img src="${resource.image('info-toggle')}" onLoad="SVGInject(this)" alt="view-info"/>
             </div>
         </div>`;
 const storekey = 'ext/info';

@@ -32,10 +32,12 @@ const init = () => {
         if (isVisible) {
             $toggle.addCls('active');
             $img.attr('src', resource.image('back'));
+            $img.attr('onLoad', 'SVGInject(this)');
             $sidebar.show();
         } else {
             $toggle.rmCls('active');
             $img.attr('src', resource.image('sidebar'));
+            $img.attr('onLoad', 'SVGInject(this)');
             $sidebar.hide();
         }
     };

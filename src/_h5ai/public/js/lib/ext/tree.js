@@ -16,10 +16,10 @@ const settings = Object.assign({
 const itemTpl =
         `<div class="item folder">
             <span class="indicator">
-                <img src="${resource.image('tree-indicator')}"/>
+                <img src="${resource.image('tree-indicator')}" onLoad="SVGInject(this)"/>
             </span>
             <a>
-                <span class="icon"><img src="${resource.icon('folder')}"/></span>
+                <span class="icon"><img src="${resource.icon('folder')}" onLoad="SVGInject(this)"/></span>
                 <span class="label"></span>
             </a>
         </span>`;
@@ -27,7 +27,7 @@ const settingsTpl =
         `<div class="block">
             <h1 class="l10n-tree">Tree</h1>
             <div id="view-tree" class="button view">
-                <img src="${resource.image('tree-toggle')}" alt="view-tree"/>
+                <img src="${resource.image('tree-toggle')}" onLoad="SVGInject(this)" alt="view-tree"/>
             </div>
         </div>`;
 const storekey = 'ext/tree';
@@ -84,7 +84,7 @@ const update = item => {
     }
 
     if (!item.isManaged) {
-        $html.find('.icon img').attr('src', resource.icon('folder-page'));
+        $html.find('.icon img').attr('src', resource.icon('folder-page')).attr('onLoad', 'SVGInject(this)');
     }
 
     // indicator

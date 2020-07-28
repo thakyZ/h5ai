@@ -12,11 +12,11 @@ const settings = Object.assign({
 const crumbbarTpl = '<div id="crumbbar"></div>';
 const crumbTpl =
         `<a class="crumb">
-            <img class="sep" src="${resource.image('crumb')}" alt=">"/>
+            <img class="sep" src="${resource.image('crumb')}" onLoad="SVGInject(this)" alt=">"/>
             <span class="label"></span>
         </a>`;
 const pageHintTpl =
-        `<img class="hint" src="${resource.icon('folder-page')}" alt="has index page"/>`;
+        `<img class="hint" src="${resource.icon('folder-page')}" onLoad="SVGInject(this)" alt="has index page"/>`;
 
 
 const createHtml = item => {

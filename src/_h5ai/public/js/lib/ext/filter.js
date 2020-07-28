@@ -14,7 +14,7 @@ const settings = Object.assign({
 }, allsettings.filter);
 const tpl =
         `<div id="filter" class="tool">
-            <img src="${resource.image('filter')}" alt="filter"/>
+            <img src="${resource.image('filter')}" onLoad="SVGInject(this)" alt="filter"/>
             <input class="l10n_ph-filter" type="text" value=""/>
         </div>`;
 let inputIsVisible = false;

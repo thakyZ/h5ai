@@ -11,7 +11,7 @@ const settings = Object.assign({
 }, allsettings.select);
 const selectorTpl =
         `<span class="selector">
-            <img src="${resource.image('selected')}" alt="selected"/>
+            <img src="${resource.image('selected')}" onLoad="SVGInject(this)" alt="selected"/>
         </span>`;
 const $document = dom(doc);
 const $html = dom('html');
