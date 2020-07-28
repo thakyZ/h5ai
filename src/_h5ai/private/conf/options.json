@@ -23,6 +23,7 @@
         "scripts": [],
         "styles": [
             "//fonts.googleapis.com/css?family=Ubuntu:300,400,700%7CUbuntu+Mono:400,700"
+            "/_h5ai/public/js/svg-inject.min.js"
         ]
     },
 

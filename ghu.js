@@ -107,7 +107,10 @@ ghu.task('build:copy', runtime => {
             .then(write(mapper, {overwrite: true, cluster: true})),
 
         read(`${ROOT}/*.md`)
-            .then(write(mapper_root, {overwrite: true, cluster: true}))
+            .then(write(mapper_root, {overwrite: true, cluster: true})),
+
+        read(`${ROOT}/node_modules/@iconfu/svg-inject/dist/svg-inject.min.js`)
+            .then(write(mapfn.p(join(ROOT, '/node_modules/@iconfu/svg-inject/dist'), join(BUILD, '_h5ai/public/js')), {overwrite: true}))
     ]);
 });
 

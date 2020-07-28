@@ -26,6 +26,7 @@
     "marked": "1.1.1",
     "normalize.css": "8.0.1",
     "null-loader": "4.0.0",
-    "scar": "2.3.0"
+    "scar": "2.3.0",
+    "@iconfu/svg-inject": "1.2.3"
   }
 }
