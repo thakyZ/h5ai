@@ -37,7 +37,6 @@
     indent: [2, 4]
     key-spacing: [2, {beforeColon: false, afterColon: true}]
     keyword-spacing: [2, {before: true, after: true}]
-    linebreak-style: [2, unix]
     max-depth: [1, 4]
     max-len: [0, 80, 4]
     max-nested-callbacks: [1, 3]
