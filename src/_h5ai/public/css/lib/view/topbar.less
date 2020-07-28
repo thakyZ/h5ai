@@ -4,9 +4,15 @@
     flex: 0 0 auto;
     order: 1;
 
-    background: @col-back-panel;
+    background: @col-back-bar; // Default: @col-back-panel
     border-bottom: 1px solid @col-border;
     z-index: 1;
+}
+
+#sidebar-toggle {
+    path {
+        fill: @col-grey-25;
+    }
 }
 
 #toolbar {
@@ -21,6 +27,13 @@
         cursor: pointer;
 
         img {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            padding: 12px;
+        }
+
+        svg {
             display: inline-block;
             width: 24px;
             height: 24px;
@@ -52,7 +65,7 @@
     height: 36px;
 
     &, &:active, &:visited {
-        color: @col-text-disabled-black;
+        color: @col-text; // Default: @col-text-disabled-black
         cursor: pointer;
         text-decoration: none;
     }

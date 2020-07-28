@@ -3,12 +3,16 @@
 @col-blue-400: #42a5f5;
 @col-pink-a200: #ff4081;
 
-@col-white: #ffffff;
-@col-grey-50: #fafafa;
-@col-grey-100: #f5f5f5;
-@col-grey-300: #e0e0e0;
-@col-grey-700: #616161;
-@col-grey-900: #212121;
+@col-white: #ffffff; // Default: Page Background
+@col-grey-25: #eeeeee; // Text Background
+@col-grey-50: #fafafa; //
+@col-grey-100: #f5f5f5; //
+@col-grey-300: #e0e0e0; //
+@col-grey-700: #616161; //
+@col-grey-850: #545454; // Layer 3 Background - View item Hover
+@col-grey-875: #434343; // Layer 3 Background - Side Bar & View Item
+@col-grey-800: #323232; // Main Background - Background & Preview Content
+@col-grey-900: #212121; // Layer 2 Background - Top Bar
 
 @col-text-primary-black: rgba(0,0,0,0.87);
 @col-text-secondary-black: rgba(0,0,0,0.54);
@@ -26,10 +30,11 @@
 @col-text-native-selection: @col-text-primary-white;
 @col-back-native-selection: @col-pink-a200;
 
-@col-text: @col-text-primary-black;
-@col-back: @col-white;
-@col-back-paper: @col-white;
-@col-back-panel: @col-grey-50;
+@col-text: @col-grey-25; // Default: @col-text-primary-black
+@col-back: @col-grey-800;
+@col-back-paper: @col-grey-875;
+@col-back-bar: @col-grey-900;
+@col-back-panel: @col-grey-850;
 @col-text-hover: @col-blue-400;
 @col-back-hover: rgba(0,0,0,0.03);
 @col-border: rgba(0,0,0,0.05);
@@ -44,3 +49,5 @@
 
 @col-range-back: @col-grey-300;
 @col-range-thumb: @col-grey-700;
+
+@col-icon-fill: @col-grey-25;

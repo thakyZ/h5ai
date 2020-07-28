@@ -53,6 +53,10 @@
         opacity: 0.5;
     }
 
+    path {
+        fill: @col-icon-fill;
+    }
+
     &:hover {
         img {
             .raised;
@@ -88,7 +92,18 @@
         position: relative;
         width: 24px;
         height: 24px;
-        padding: 12px
+        padding: 12px;
+    }
+
+    svg {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        padding: 12px;
+
+        path {
+            fill: @col-icon-fill;
+        }
     }
 
     .bar-label {

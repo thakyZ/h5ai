@@ -20,6 +20,10 @@
         }
     }
 
+    path {
+        fill: @col-icon-fill;
+    }
+
     .active > a {
         font-weight: bold;
     }
@@ -47,7 +51,8 @@
             transform: rotate(90deg);
         }
         &.unknown > .indicator {
-            opacity: 0.3;
+            opacity: 0.6; // Default: 0.3
+            fill: @col-icon-fill;
         }
         &.none > .indicator {
             opacity: 0;

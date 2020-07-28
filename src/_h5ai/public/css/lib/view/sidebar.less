@@ -3,7 +3,7 @@
     overflow-y: auto;
     flex: 0 0 auto;
     order: 0;
-    background: @col-back-panel;
+    background: @col-back-paper; // Default: @col-back-panel
     border-right: 1px solid @col-border;
     padding: 16px;
 
@@ -45,6 +45,10 @@
             height: 24px;
             padding: 12px;
         }
+
+        path {
+            fill: @col-icon-fill;
+        }
     }
 
     .select {
@@ -64,6 +68,7 @@
         border: 0 solid #000;
         cursor: pointer;
         outline: 0;
+        color: @col-text;
 
         &:hover {
             background: @col-back-hover;
@@ -75,6 +80,10 @@
         padding: 0 8px;
         height: 48px;
         line-height: 48px;
+
+        option {
+            background-color: #000;
+        }
     }
 
     input[type='range'] {

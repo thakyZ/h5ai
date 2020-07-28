@@ -16,6 +16,11 @@
                 width: @size;
                 height: @size;
             }
+
+            svg {
+                width: @size;
+                height: @size;
+            }
         }
 
         .label {
@@ -33,15 +38,20 @@
         border-radius: 2px 2px 0 0;
 
         .label, .date, .size {
+            color: @col-text;
             .eased-transition;
             line-height: 24px;
             padding: 0px 8px 16px 8px;
-            opacity: 0.4;
+            opacity: 0.6; // Default: 0.4
             outline: 0;
 
             &:hover {
                 opacity: 1;
                 color: @col-text-hover;
+            }
+
+            path {
+                fill: @col-icon-fill;
             }
         }
 
