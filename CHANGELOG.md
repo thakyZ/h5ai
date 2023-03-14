@@ -1,6 +1,5 @@
 # Changelog
 
-
 * now require PHP 7.0.0+
 * fix archive-single-item problem
 * add header/footer search stop condition
@@ -21,7 +20,6 @@
 * update `null-loader` to 4.0.1
 * update `scar` to 2.3.0
 
-
 ## v0.29.2 - *2019-03-22*
 
 * update `babel-loader` to 7.1.1
@@ -31,7 +29,6 @@
 * update `kjua` to 0.2.0
 * update `lolight` to 1.0.0
 * update `scar` to 1.2.0
-
 
 ## v0.29.1 - *2019-01-20*
 
@@ -44,7 +41,6 @@
 * update `marked` to 0.6.1
 * update `normalize.css` to 8.0.1
 * update `scar` to 1.0.0
-
 
 ## v0.29.0 - *2016-08-12*
 
@@ -78,7 +74,6 @@
 * reduce JS code by 60% (~250kb -> ~100kb)
 * update languages (`et`, `nl`, `pl`)
 
-
 ## v0.28.0 - *2015-12-19*
 
 * now require PHP 5.5.0+
@@ -105,7 +100,6 @@
 * update h5bp styles to 5.2.0
 * update `normalize.css` to 3.0.3
 * remove `Moment.js`
-
 
 ## v0.27.0 - *2015-04-06*
 
@@ -140,11 +134,9 @@
 * remove `jQuery.mousewheel`
 * update languages (`af`, `es`, `ja`, `ko`, `ru`, `zh-cn`)
 
-
 ## v0.26.1 - *2014-08-17*
 
 * fix links
-
 
 ## v0.26.0 - *2014-08-16*
 
@@ -163,7 +155,6 @@
 * replace `underscore` with [`Lo-Dash`](https://github.com/lodash/lodash) 2.4.1
 * replace `SyntaxHighlighter` with [`Prism`](http://prismjs.com) 2014-08-04
 
-
 ## v0.25.2 - *2014-07-01*
 
 * add optional info page protection
@@ -171,13 +162,11 @@
 * fix default folder download (`alwaysVisible` option)
 * minor fixes
 
-
 ## v0.25.1 - *2014-06-25*
 
 * fix broken paths for filenames containing '+' characters
 * fix Google Universal Analytics
 * fix file type check
-
 
 ## v0.25.0 - *2014-06-22*
 
@@ -208,13 +197,11 @@
 * update `Underscore.js` to 1.6.0
 * update languages (`bg`, `ko`, `pt`, `sl`, `sv`, `zh-cn`)
 
-
 ## v0.24.1 - *2014-04-09*
 
 * security fixes! (issues [#268](https://github.com/lrsjng/h5ai/issues/268), [#269](https://github.com/lrsjng/h5ai/issues/269))
 * fix WinOS command detection
 * update languages (`fi`, `fr`, `hi`, `it`, `zh-tw`)
-
 
 ## v0.24.0 - *2013-09-04*
 
@@ -233,7 +220,6 @@
 * adds `aiff` to `audio` types
 * adds `da` translation by Ronnie Milbo
 * updates to `pl` translation by Mark
-
 
 ## v0.23.0 - *2013-07-21*
 
@@ -259,12 +245,10 @@
 * adds `uk` translation by Viktor Matveenko
 * updates to `pl` translation by Mark
 
-
 ## v0.22.1 - *2012-10-16*
 
 * bug fix concerning API requests in PHP mode
 * minor changes in responsive styles
-
 
 ## v0.22 - *2012-10-14*
 
@@ -293,7 +277,6 @@
 * adds `he` translation by [Tomer Cohen](https://github.com/tomer)
 * updates 3rd party libs
 
-
 ## v0.21 - *2012-08-06*
 
 * fixes misaligned image previews
@@ -314,7 +297,6 @@
 * updates to [Moment.js](http://momentjs.com) 1.7.0
 * updates to [Underscore.js](http://underscorejs.org) 1.3.3
 
-
 ## v0.20 - *2012-05-11*
 
 * adds image preview
@@ -324,7 +306,6 @@
 * fixes some localization problems
 * updates info page at `/_h5ai/`
 * switches to JSHint
-
 
 ## v0.19 - *2012-04-19*
 
@@ -352,7 +333,6 @@
 * adds `sr` translation by [vBm](https://github.com/vBm)
 * adds `gr` translation by [xhmikosr](https://github.com/xhmikosr)
 
-
 ## v0.18 - *2012-02-24*
 
 * adds optional QRCode display
@@ -373,7 +353,6 @@
 * adds `zh-tw` translation by [Yao Wei](https://github.com/medicalwei)
 * updates `zh-cn` translation
 
-
 ## v0.17 - *2011-11-28*
 
 * h5ai is now located in `_h5ai` to reduce collisions
@@ -389,7 +368,6 @@
 * fixes total file/folder count in status bar
 * adds support for use with userdir (requires some manual changes)
 
-
 ## v0.16 - *2011-11-02*
 
 * sorts translations in `options.js`
@@ -403,24 +381,20 @@
 * PHP version is now configurable via `php/config.php` (set custom doc root and other PHP related things)
 * image thumbs and zipped download is disabled by default now, but works fine if PHP is configured
 
-
 ## v0.15.2 - *2011-09-18*
 
 * adds `it` translation by [Salvo Gentile](https://github.com/SalvoGentile) and [Marco Patriarca](https://github.com/Fexys)
 * switches build process from scripp to wepp
-
 
 ## v0.15.1 - *2011-09-06*
 
 * fixes security issues with the zipped download feature
 * makes zipped download optional (but enabled by default)
 
-
 ## v0.15 - *2011-09-04*
 
 * adds zipped download for selected files
 * cleans and refactores
-
 
 ## v0.14.1 - *2011-09-01*
 
@@ -429,17 +403,14 @@
 * adds `pl` translation by Radosław Zając
 * adds `ru` translation by Богдан Илюхин
 
-
 ## v0.14 - *2011-08-16*
 
 * adds image thumbnails for PHP version
 * new option `slideTree` to turn off auto slide in
 
-
 ## v0.13.2 - *2011-08-12*
 
 * changes in `/h5ai/.htaccess` ... PHP configuration ...
-
 
 ## v0.13.1 - *2011-08-12*
 
@@ -447,7 +418,6 @@
 * adds sort order option
 * adds/fixes some translations
 * adds `lv` translation by Sandis Veinbergs
-
 
 ## v0.13 - *2011-08-06*
 
@@ -462,41 +432,33 @@
 * adds `pt` translation by [Jonnathan](https://github.com/jonnsl)
 * adds `bg` translation by George Andonov
 
-
 ## v0.12.3 - *2011-07-30*
 
 * adds `tr` translation by [Batuhan Icoz](https://github.com/batuhanicoz)
-
 
 ## v0.12.2 - *2011-07-30*
 
 * adds `es` translation by Jose David Calderon Serrano
 
-
 ## v0.12.1 - *2011-07-29*
 
 * fixes unchecked use of console.log
-
 
 ## v0.12 - *2011-07-28*
 
 * improves performance
 
-
 ## v0.11 - *2011-07-27*
 
 * changes license to MIT license, see `LICENSE.txt`
-
 
 ## v0.10.2 - *2011-07-26*
 
 * improves tree scrollbar
 
-
 ## v0.10.1 - *2011-07-24*
 
 * fixes problems with ' in links
-
 
 ## v0.10 - *2011-07-24*
 
@@ -505,7 +467,6 @@
 * adds custom scrollbar to tree ([issue #6](https://github.com/lrsjng/h5ai/issues/6))
 * fixes broken links caused by URI encoding/decoding ([issue #9](https://github.com/lrsjng/h5ai/issues/9))
 * adds "empty" to localization (hope Google Translate did a good job here)
-
 
 ## v0.9 - *2011-07-18*
 
@@ -517,7 +478,6 @@
 * adds `nl` translation by [Stefan de Konink](https://github.com/skinkie)
 * adds `sv` translation by Oscar Carlsson
 
-
 ## v0.8 - *2011-07-08*
 
 * removes slashes from folder labels
@@ -526,18 +486,15 @@
 * error folder icons are opaque now
 * refactores js a lot (again...)
 
-
 ## v0.7 - *2011-07-07*
 
 * removes shadows
 * smarter tree side bar
 
-
 ## v0.6 - *2011-07-05*
 
 * refactores js
 * adds localization, see `options.js`
-
 
 ## v0.5.3 - *2011-07-04*
 
@@ -546,23 +503,19 @@
 * adds comments to `options.js`
 * adds optional tree sidebar
 
-
 ## v0.5.2 - *2011-07-02*
 
 * details view adjusts to window width
-* links icon for *.gz and *.bz2
-
+* links icon for \*.gz and \*.bz2
 
 ## v0.5.1 - *2011-07-01*
 
 * disables tree sidebar for now, since it had unwanted side effects
 
-
 ## v0.5 - *2011-07-01*
 
 * adds tree sidebar
 * some refactorings
-
 
 ## v0.4 - *2011-06-27*
 
@@ -572,19 +525,16 @@
 * sorts, adds and moves icons and images
 * updates dot.access
 
-
 ## v0.3.2 - *2011-06-24*
 
 * removes lib versions from file names
 * adds 'empty' indicator for icons view
-
 
 ## v0.3.1 - *2011-06-24*
 
 * refactores js
 * adds `folderClick` and `fileClick` callback hooks
 * fixes .emtpy style
-
 
 ## v0.3 - *2011-06-23*
 
@@ -593,11 +543,9 @@
 * adds Modernizr 2.0.4 for future use
 * updates jQuery to version 1.6.1
 
-
 ## v0.2.3 - *2011-06-17*
 
 * more refactoring in main.js
-
 
 ## v0.2.2 - *2011-06-16*
 
@@ -605,14 +553,12 @@
 * includes fixes from [NumEricR](https://github.com/NumEricR)
 * adds top/bottom message support, only basicly styled
 
-
 ## v0.2.1 - *2011-06-16*
 
 * fixes croped filenames
 * fixes missing .png extension in header
 * adds some color to the links
 * adds changelog
-
 
 ## v0.2 - *2011-06-15*
 

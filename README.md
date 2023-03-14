@@ -4,7 +4,6 @@
 
 A modern HTTP web server index for Apache httpd, lighttpd, and nginx.
 
-
 ## Important
 
 * Do **not** install any files from the `src` folder, they need to be
@@ -12,7 +11,6 @@ A modern HTTP web server index for Apache httpd, lighttpd, and nginx.
 * Find a preprocessed package and detailed install instructions on the
   [project page][web].
 * For bug reports and feature requests please use [issues][github-issues].
-
 
 ## Build
 
@@ -23,17 +21,16 @@ commands to find a fresh zipball in folder `build` (tested on linux only,
 requires [`node 10.0+`][node] to be installed, might work on other
 configurations).
 
-~~~sh
+```sh
 > npm install
 > npm run build
-~~~
-
+```
 
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2020 Lars Jung (https://larsjung.de)
+Copyright (c) 2020 Lars Jung (<https://larsjung.de>)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -53,12 +50,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-
 ## References
 
 **h5ai** profits from other projects, all of them licensed under the MIT license
 too. Exceptions are some [Material Design icons][material-design-icons] (CC BY 4.0).
-
 
 [web]: https://larsjung.de/h5ai/
 [github]: https://github.com/lrsjng/h5ai
