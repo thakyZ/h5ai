@@ -1,0 +1,6 @@
+[submodule "ghu"]
+	path = ghu
+	url = https://github.com/thakyZ/ghu.git
+[submodule "ghy"]
+	path = ghy
+	url = https://github.com/thakyZ/ghu.git
