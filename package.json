@@ -10,7 +10,7 @@
     "url": "https://github.com/lrsjng/h5ai.git"
   },
   "scripts": {
-    "lint": "eslint .",
+    "lint": "npx cross-env ESLINT_USE_FLAT_CONFIG=true eslint -c eslint.config.mjs .",
     "test": "node test",
     "build": "node ghu release",
     "precommit": "npm run -s lint && npm run -s test"
@@ -20,6 +20,7 @@
     "@babel/eslint-parser": "^7.21.3",
     "@babel/preset-env": "7.12.11",
     "@iconfu/svg-inject": "1.2.3",
+    "cross-env": "^7.0.3",
     "eslint": "^8.35.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-markdown": "^3.0.0",

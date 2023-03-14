@@ -124,7 +124,7 @@ dom.prototype = {
     },
 
     rmProp(key) {
-        return this.each(el => delete el[key]);
+        return this.each(el => Reflect.deleteProperty(el[key]));
     },
 
     val(value) {

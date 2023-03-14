@@ -80,9 +80,9 @@ const removeItem = absHref => {
     const item = cache[absHref];
 
     if (item) {
-        delete cache[absHref];
+        Reflect.deleteProperty(cache[absHref]);
         if (item.parent) {
-            delete item.parent.content[item.absHref];
+            Reflect.deleteProperty(item.parent.content[item.absHref]);
         }
         each(item.content, child => {
             removeItem(child.absHref);

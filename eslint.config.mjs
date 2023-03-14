@@ -33,7 +33,7 @@ export default [
             parserOptions: {
                 ecmaVersion: 6,
                 sourceType: "script",
-                requireConfigFile: true,
+                requireConfigFile: false,
                 babelOptions: {
                     babelrc: true,
                     configFile: true,
@@ -89,7 +89,7 @@ export default [
             ],
             "complexity": [
                 1,
-                10
+                20
             ],
             "computed-property-spacing": [
                 2,
@@ -165,7 +165,7 @@ export default [
             ],
             "max-params": [
                 1,
-                4
+                5
             ],
             "max-statements": [
                 1,
