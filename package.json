@@ -10,6 +10,7 @@
     "url": "https://github.com/lrsjng/h5ai.git"
   },
   "scripts": {
+    "prepare": "npm run build",
     "lint": "eslint .",
     "test": "node test",
     "build": "node ghu release",
