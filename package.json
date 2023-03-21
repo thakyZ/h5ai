@@ -11,7 +11,7 @@
   },
   "scripts": {
     "prepare": "npm run build",
-    "lint": "eslint .",
+    "lint": "npx cross-env ESLINT_USE_FLAT_CONFIG=true eslint -c eslint.config.mjs .",
     "test": "node test",
     "build": "node ghu release",
     "precommit": "npm run -s lint && npm run -s test"
